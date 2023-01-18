@@ -21,7 +21,7 @@ namespace Linked_List
             //linkedList.Appending(30);
             //linkedList.Appending(70);
             //linkedList.Appending(56);
-            linkedList.insert(30);
+            linkedList.insert(2,30);
             linkedList.DisplayLinkedList();
 
         }
