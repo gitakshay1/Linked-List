@@ -71,6 +71,15 @@ namespace Linked_List
             }
             Console.WriteLine(node.data + " is added to linked-list");
         }
-       
+        public void insert(int data)
+        {
+            Node node = new Node(data);
+            Node temp= Head;
+            Node tempNode=temp.Next;
+            temp.Next = node;
+            temp= temp.Next;
+            temp.Next = tempNode;
+            Console.WriteLine(node.data + " is inserted in linked list");
+        }
     }
 }
