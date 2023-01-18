@@ -1,4 +1,7 @@
-﻿namespace Linked_List
+﻿using System.Collections.Generic;
+using System.Xml.Linq;
+
+namespace Linked_List
 {
     public class Program
     {
@@ -10,10 +13,16 @@
             //linkedList.AddNode(70);
             //linkedList.DisplayLinkedList();
 
-            linkedList.AddReverse(70);
-            linkedList.AddReverse(30);
-            linkedList.AddReverse(56);
+            //linkedList.AddReverse(70);
+            //linkedList.AddReverse(30);
+            //linkedList.AddReverse(56);
+            //linkedList.DisplayLinkedList();
+
+            linkedList.Appending(30);
+            linkedList.Appending(70);
+            linkedList.Appending(56);
             linkedList.DisplayLinkedList();
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Linked_List
 {
     public class LinkedList
     {
-        Node Head;
+        public Node Head;
         public void AddNode(int data)
         {
             Node node = new Node(data);
@@ -52,5 +52,25 @@ namespace Linked_List
             }
             Console.WriteLine(node.data + " is added to linked-list");
         }
+        public void Appending(int data)
+        {
+            Node node = new Node(data);
+            if (Head == null)
+            {
+                Head = node;
+
+            }
+            else
+            {
+                Node temp = Head;
+                while (temp.Next != null)
+                {  
+                    temp= temp.Next;
+                }
+                temp.Next = node;
+            }
+            Console.WriteLine(node.data + " is added to linked-list");
+        }
+       
     }
 }
