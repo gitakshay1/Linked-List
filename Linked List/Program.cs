@@ -9,7 +9,7 @@ namespace Linked_List
         {
             LinkedList linkedList= new LinkedList();
             linkedList.AddNode(56);
-            //linkedList.AddNode(30);
+            linkedList.AddNode(30);
             linkedList.AddNode(70);
             //linkedList.DisplayLinkedList();
 
@@ -21,7 +21,9 @@ namespace Linked_List
             //linkedList.Appending(30);
             //linkedList.Appending(70);
             //linkedList.Appending(56);
-            linkedList.insert(2,30);
+            //linkedList.insert(2,30);
+
+            linkedList.DeleteFirst();
             linkedList.DisplayLinkedList();
 
         }

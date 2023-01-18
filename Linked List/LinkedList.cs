@@ -92,6 +92,11 @@ namespace Linked_List
             }
 
         }
-
+        public void DeleteFirst()
+        {
+            Node temp = Head;
+            Head=temp.Next;
+            temp = null;
+        }
     }
 }
