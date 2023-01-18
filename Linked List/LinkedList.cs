@@ -98,5 +98,16 @@ namespace Linked_List
             Head=temp.Next;
             temp = null;
         }
+        public void DeleteLast()
+        {
+            Node temp = Head;
+            
+            while (temp.Next.Next != null)
+            {
+                temp= temp.Next;
+            }
+            temp.Next = null;
+
+        }
     }
 }

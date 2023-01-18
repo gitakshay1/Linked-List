@@ -23,7 +23,8 @@ namespace Linked_List
             //linkedList.Appending(56);
             //linkedList.insert(2,30);
 
-            linkedList.DeleteFirst();
+            //linkedList.DeleteFirst();
+            linkedList.DeleteLast();
             linkedList.DisplayLinkedList();
 
         }
