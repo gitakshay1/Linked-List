@@ -37,5 +37,20 @@ namespace Linked_List
                 tempnode = tempnode.Next;
             }
         }
+        public void AddReverse(int data)
+        {
+            Node node = new Node(data);
+            if (Head == null)
+            {
+                Head = node;
+            }
+            else
+            {
+                Node temp = Head;
+                Head = node; 
+                Head.Next = temp;
+            }
+            Console.WriteLine(node.data + " is added to linked-list");
+        }
     }
 }
